@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Codificador</title>
+</head>
+<body background="https://png.pngtree.com/back_origin_pic/00/13/72/65c5e52fe7a1f35692aa201453888a07.jpg">
+    <main>
+        <div class="principal">
+            <h1>Codificador</h1>
+            <form>
+                <div>
+                    <select name="cesarCode" id="cesarCode">
+                        <option value="" disabled selected>Escolha uma opção</option>
+                        <option value="cesar">Cifra de César</option>
+                        <option value="base">Base64</option>
+                    </select>
+                </div>
+                <div class="entrada">
+                    <input type="text" id="areaTexto" placeholder="Insira o texto para codificar">
+                </div>
+                <input type="text" id="incremento" placeholder="Insira a chave">
+                <div id='opcoes1'>
+                    <div id="input-field" onclick="codificarCesar()">
+                        <input type="radio" id="codi" name="selecao">
+                        <label for="codi">Codificar</label>
+                    </div>
+                    <div id="input-field" onclick="decodificarCesar()">
+                        <input type="radio" id="decodi" name="selecao">
+                        <label for="decodi">Decodificar</label>
+                    </div>
+                </div>
+                <div id='opcoes2'>
+                    <div id="input-field" onclick="codificarBase()">
+                        <input type="radio" id="codi" name="selecao">
+                        <label for="codi">Codificar</label>
+                    </div>
+                    <div id="input-field" onclick="decodificarBase()">
+                        <input type="radio" id="decodi" name="selecao">
+                        <label for="decodi">Decodificar</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+   <footer>
+        <p  class = "copyright">
+        &copy; Bianca Padilha- 2021
+        </p>
+    </footer>
+    <script src="./Js/script.js"></script>
+</body>
+</html>
